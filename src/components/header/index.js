@@ -1,19 +1,17 @@
 import React from 'react';
-import Typist from 'react-typist';
+import TypeOut from 'react-typeout';
 
 import {
   Container
 } from './styles/header';
 
+const words = ['FAST', 'Original', 'Beautiful'];
+
 export default function Header({children, ...restProps}) {
   return  (
-  <Container>
-    <h1>Build something</h1>
-    <Typist>
-    <Typist.Delay ms={100} />
-      Fast
-    </Typist>
-  </Container> 
+    <Container>
+      <h1>Build Something <span><TypeOut words={words}></TypeOut></span></h1>
+    </Container> 
   );
 }
 

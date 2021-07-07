@@ -1,6 +1,8 @@
 import styled from 'styled-components/macro';
 
 export const Container = styled.div`
-  color: 'white';
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1em;
 `
